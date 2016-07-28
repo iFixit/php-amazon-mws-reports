@@ -868,7 +868,7 @@ class MarketplaceWebService_Client implements MarketplaceWebService_Interface
   {
     $exProps = array();
     $exProps["StatusCode"] = $status;
-    $exProps["ResponseHeaderMetadata"] = $responseHeaderMetadata;
+    $exProps["ResponseHeaderMetadata"] = $metadata;
     
     libxml_use_internal_errors(true);  // Silence XML parsing errors
     $xmlBody = simplexml_load_string($responseBody);
